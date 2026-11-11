@@ -1,0 +1,24 @@
+Issue Type,Summary,Description,Epic Name,Epic Link,Assignee,Acceptance Criteria
+Epic,Technical Analysis,Charts and indicators for any stock,Technical Analysis,,,
+Story,Candlestick chart,As a user I want a candlestick chart for a ticker so I can see price action,,Technical Analysis,Member 1,Given a valid ticker then a candlestick chart with volume loads in under 5s; invalid ticker shows an error message
+Story,Indicators (SMA RSI MACD),As a user I want indicators on the chart so I can judge trend and momentum,,Technical Analysis,Member 1,SMA20/50 and RSI are shown; trend summary says uptrend/downtrend and overbought/oversold
+Story,Period selector,As a user I want to choose the time period,,Technical Analysis,Member 1,3mo/6mo/1y/2y options change the chart
+Epic,Fundamental Analysis,Company financials and valuation,Fundamental Analysis,,,
+Story,Valuation metrics,As a user I want P/E EPS margin and market cap,,Fundamental Analysis,Member 2,Table of key metrics is shown for a valid ticker; missing values show None
+Story,Financial statements,As a user I want income statement balance sheet and cash flow,,Fundamental Analysis,Member 2,All three statements load as tables
+Epic,Calculations and What-if,Python-powered comparisons and projections,Calculations and What-if,,,
+Story,Stock comparison,As a user I want to compare stocks on return and risk,,Calculations and What-if,Member 2,Table shows return volatility and max drawdown for 2+ tickers
+Story,What-if projection,As a user I want to see how my money could grow,,Calculations and What-if,Member 2,Chart and 3 scenarios shown; assumptions are displayed
+Epic,Chat Interface,Conversational UI with explanations,Chat Interface,,,
+Story,Chat UI,As a user I want to ask questions in plain language,,Chat Interface,Member 3,Chat keeps history; errors are shown politely
+Story,Tool calling,As a user I want the AI to fetch data itself,,Chat Interface,Member 3,AI calls the right tool and explains result with source and assumptions
+Story,Disclaimer and sources,As a user I want to know data source and limits,,Chat Interface,Member 3,Every answer names the source and says not financial advice
+Epic,Backend and Infrastructure,Harness MCP sandbox and workers,Backend and Infrastructure,,,
+Story,AI harness,As a developer I want a controlled tool loop with permissions,,Backend and Infrastructure,Member 3,Only whitelisted tools run; loop stops after 6 rounds
+Story,Python sandbox,As a developer I want safe code execution,,Backend and Infrastructure,Member 1,Code runs with 10s timeout; dangerous imports are blocked
+Story,Celery background tasks,As a user I want long analyses to run in background,,Backend and Infrastructure,Member 1,Task shows progress; retries 3 times on failure; result is saved
+Story,CI pipeline,As a team we want automatic checks,,Backend and Infrastructure,Member 2,GitHub Action runs flake8 and pytest on every pull request
+Epic,Documentation and Delivery,Boards diagram and presentation,Documentation and Delivery,,,
+Story,Miro board,Research journeys wireframes and system flow,,Documentation and Delivery,Member 3,Board has 4 sections
+Story,Architecture diagram,AWS-style diagram,,Documentation and Delivery,Member 2,Shows services data flow workers queue and sandbox
+Story,Presentation and demo,5-7 slides and short demo,,Documentation and Delivery,Member 1,Covers problem features architecture demo
