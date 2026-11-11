@@ -60,3 +60,8 @@ flake8 . --max-line-length=100
 - Projections assume a constant annual return, which real markets do not give.
 - The sandbox here is process-level; production should use Docker/Fargate.
 - MCP: market data tools can be wrapped as an MCP server; this demo calls them directly.
+
+
+
+## Contributors
+- Fundamental analysis: Abdul Razzaq
